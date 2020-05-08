@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/05/07/%E5%B0%8F%E7%BB%93%E5%87%A0%E7%A7%8D%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95(%E4%B8%8A)/%E5%BD%92%E5%B9%B6.gif">
 <meta property="og:image" content="http://yoursite.com/2020/05/07/%E5%B0%8F%E7%BB%93%E5%87%A0%E7%A7%8D%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95(%E4%B8%8A)/%E7%BB%93%E6%9D%9F.jpg">
 <meta property="article:published_time" content="2020-05-07T13:16:10.000Z">
-<meta property="article:modified_time" content="2020-05-08T12:55:04.333Z">
+<meta property="article:modified_time" content="2020-05-08T13:07:16.062Z">
 <meta property="article:author" content="KD_Lee">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -206,7 +206,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="小结几种排序算法（上）"><a href="#小结几种排序算法（上）" class="headerlink" title="小结几种排序算法（上）"></a>小结几种排序算法（上）</h1><p>​        这段时间完成了数据结构中排序这一板块的学习，为加深对这部分内容的理解，故借此篇文章作以总结，如有描述不当的地方还望读者加以指正，特此感谢。</p>
+        <h1 id="小结几种排序算法（上）"><a href="#小结几种排序算法（上）" class="headerlink" title="小结几种排序算法（上）"></a><center>小结几种排序算法（上）</center></h1><p>​        这段时间完成了数据结构中排序这一板块的学习，为加深对这部分内容的理解，故借此篇文章作以总结，如有描述不当的地方还望读者加以指正，特此感谢。</p>
 <p>​        /注：全文图片部分均来自网络，侵删；文字部分参考《算法第四版》，为博主理解性描述；代码部分参考《算法第四版》/</p>
 <p>​        那就开始吧  <strong>~</strong></p>
 <img src="/2020/05/07/%E5%B0%8F%E7%BB%93%E5%87%A0%E7%A7%8D%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95(%E4%B8%8A)/开始.jpg" style="zoom: 33%;">
@@ -216,6 +216,7 @@
 <ul>
 <li><p>思想：法如其名，我们想要对一个序列进行排序，首先一个很直观的想法就是我先扫描一遍整个序列，找出这个序列中最小的元素，将它放在第一位，再扫描剩下的元素，找到剩下元 素的最小值放置于剩下的元素这一集合的首位，依次执行直至剩余元素个数为零则排序完成。（如图所示）</p>
 <p>​            <em>注：本文中都是将序列由小到大排序。</em></p>
+<a id="more"></a>
 </li>
 <li><p>特点：选择排序作为一种简单的排序算法有两大基本特点：1）<strong>运行时间和输入无关</strong>：无论输入顺序如何，每次扫描都需完整扫面全部序列。2）<strong>数据移动是最少的</strong>：每次交换会改变两                               个数组元素的值，故经N此交换——交换次数和数组大小呈线性关系。</p>
 </li>
